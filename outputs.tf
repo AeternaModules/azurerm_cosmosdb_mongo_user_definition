@@ -1,3 +1,7 @@
+output "cosmosdb_mongo_user_definitions_id" {
+  description = "Map of id values across all cosmosdb_mongo_user_definitions, keyed the same as var.cosmosdb_mongo_user_definitions"
+  value       = { for k, v in azurerm_cosmosdb_mongo_user_definition.cosmosdb_mongo_user_definitions : k => v.id }
+}
 output "cosmosdb_mongo_user_definitions_cosmos_mongo_database_id" {
   description = "Map of cosmos_mongo_database_id values across all cosmosdb_mongo_user_definitions, keyed the same as var.cosmosdb_mongo_user_definitions"
   value       = { for k, v in azurerm_cosmosdb_mongo_user_definition.cosmosdb_mongo_user_definitions : k => v.cosmos_mongo_database_id }
