@@ -4,8 +4,8 @@ Map of cosmosdb_mongo_user_definitions, attributes below
 Required:
     - cosmos_mongo_database_id
     - password
-    - password_key_vault_id (alternative to password - read from Key Vault instead)
-    - password_key_vault_secret_name (alternative to password - read from Key Vault instead)
+    - password_key_vault_id (optional, alternative to password)
+    - password_key_vault_secret_name (optional, alternative to password)
     - username
 Optional:
     - inherited_role_names
